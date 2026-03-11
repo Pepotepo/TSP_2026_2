@@ -589,7 +589,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &282789905
 RectTransform:
   m_ObjectHideFlags: 0
@@ -869,7 +869,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &317884594
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1254,8 +1254,13 @@ MonoBehaviour:
   - {fileID: 282789904}
   - {fileID: 317884593}
   currentIndex: 0
-  mensajesInstrucciones: []
-  textMeshProUGUI: {fileID: 0}
+  mensajesInstrucciones:
+  - Hola
+  - Este
+  - Es un
+  - Texto
+  - Muy feliz
+  textMeshProUGUI: {fileID: 1723415172}
 --- !u!4 &418240722
 Transform:
   m_ObjectHideFlags: 0
@@ -1438,12 +1443,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 418240721}
         m_TargetAssemblyTypeName: EventUI, Assembly-CSharp
-        m_MethodName: CycleObjets
-        m_Mode: 1
+        m_MethodName: CycleText
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1940,12 +1945,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 418240721}
         m_TargetAssemblyTypeName: EventUI, Assembly-CSharp
-        m_MethodName: CycleObjets
-        m_Mode: 1
+        m_MethodName: CycleText
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: -1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -2612,7 +2617,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1238097865
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3608,8 +3613,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 418240721}
         m_TargetAssemblyTypeName: EventUI, Assembly-CSharp
-        m_MethodName: ChangeSceneByName
-        m_Mode: 5
+        m_MethodName: ReloadCurrentScene
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -3709,8 +3714,8 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
